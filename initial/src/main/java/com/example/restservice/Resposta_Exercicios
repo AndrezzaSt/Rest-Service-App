@@ -1,0 +1,24 @@
+3) Responda as seguintes questões:
+a) Qual o propósito da anotação @RestController?
+Marca a classe como um controller onde todo o método retorna um objeto dominio ao inves de uma view.
+
+b) Qual o propósito da anotação @RequestMapping? Qual a sua relação com as anotações
+@GetMapping, @PostMapping, @PutMapping, @DeleteMapping, e @PatchMapping?
+Estas notações asseguram que as requests GET/POST/PUT HTTP serão mapeadas
+ao método que lhe foi chamado.
+
+The @RequestMapping annotation maps all HTTP operations
+by default and, in this example, it ensures
+that HTTP requests to /student/allstudent are mapped to the getAllStudents() method.
+
+c) Qual o propósito da anotação @RequestParam?
+Binds the value of the query string parameter name into the name parameter of the greeting()
+method. If the name parameter is absent in the request, the defaultValue of World is used.
+
+d) De que maneira se configura o acesso aos elementos componentes de uma requisição
+HTTP?
+The Greeting object must be converted to JSON. Thanks to Spring’s HTTP message converter support,
+you need not do this conversion manually.
+
+e) Qual o propósito da biblioteca “Jackson”?
+A biblioteca Jackson é utilizada para gerar objetos JSON.
